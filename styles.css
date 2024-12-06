@@ -1,0 +1,149 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #fdf5f5;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  .sos-button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .sos-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Main Content */
+  main {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    background-color: #c0392b;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .component-box {
+    background-color: #eaeaea;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fdf5f5;
+  }
+  
+  .ar-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .ar-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sos-button {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+  
+    .section-title {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .component-box {
+      height: 150px;
+    }
+  
+    .ar-button {
+      padding: 6px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  
+    .sos-button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    .section-title {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+  
+    .component-box {
+      height: 120px;
+    }
+  
+    .ar-button {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+    }
+  }
+  
